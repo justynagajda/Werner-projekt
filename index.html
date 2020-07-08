@@ -1,269 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Werner Projekt</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
-	<link rel="icon" type="image/jpg" href="img/favicon.jpg">
-	<script src="https://kit.fontawesome.com/ac6679b7ed.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+  <script src="https://kit.fontawesome.com/ac6679b7ed.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg py-4">
-        <div class="container">
-            <img src="img/logo.png"  alt="logo"/>
-          <div class="navbar-nav">
-            <a class="nav-item py-3 px-4" onclick="showFooter();">kontakt</a>
-          </div>
+  <nav class="navbar navbar-expand-lg py-4">
+    <div class="container">
+      <img src="img/logo.png" alt="logo" />
+      <div class="navbar-nav">
+        <a class="nav-item py-3 px-4" onclick="showFooter();">kontakt</a>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="wrapper">
+      <section class="container-fluid top-hero info-hero">
+        <div class="container-fluid hero-shadow"></div>
+        <div class="container hero-text py-4">
+          <p class="row top-hero-text py-5">wykończenia wnętrz, remonty, elewacje, montaże</p>
+          <p class="row header-info py-5">Działamy na rynku od xxx roku. Wykonujemy kompleksowo usługi remontowe domów,
+            mieszkań i biur pod klucz, wykończenia stanów deweloperskich, realizacje projektów architektonicznych oraz
+            remonty łazienek. Realizujemy zlecenia na terenie Krakowa i okolic.</p>
         </div>
-      </nav>
-      <header>
-        <div class="wrapper">
-            <section class="container-fluid top-hero info-hero">
-                <div class="container-fluid hero-shadow"></div>
-               <div class="container hero-text py-4">
-                <p class="row top-hero-text py-5">wykończenia wnętrz, remonty, elewacje, montaże</p>
-                <p class="row header-info py-5">Działamy na rynku od xxx roku. Wykonujemy kompleksowo usługi remontowe domów, mieszkań i biur pod klucz, wykończenia stanów deweloperskich, realizacje projektów architektonicznych oraz remonty łazienek. Realizujemy zlecenia na terenie Krakowa i okolic.</p>
-               </div>
-            </section>
-        </div>
-      </header>
-      <section class="gallery mb-5">
-          <div class="container text-center">
-            <p class="display-3 header">nasze realizacje</p>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <div class="hidden">
-                        <img src="img/img1.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal" data-target="#exampleModalLong1">
+      </section>
+    </div>
+  </header>
+  <section class="gallery mb-5">
+    <div class="container text-center">
+      <p class="display-3 header">nasze realizacje</p>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+        <div class="col mb-4">
+          <div class="card border-0">
+            <div class="hidden">
+              <img src="img/img1.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal"
+                data-target="#exampleModalLong1">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Opis realizacji</h3>
+              <p class="card-text realization-description ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quis similique, modi alias quos laudantium.</p>
+            </div>
+            <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="close-icon-wrapper">
+                      <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
                     </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Opis realizacji</h3>
-                      <p class="card-text realization-description ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis similique, modi alias quos laudantium.</p> 
-                    </div>
-                    <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="close-icon-wrapper">
-                                  <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
-                                </div>
-                                <img src="img/img1.jpg" class="card-img-modal">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+                    <img src="img/img1.jpg" class="card-img-modal">
                   </div>
                 </div>
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <div class="hidden">
-                      <img src="img/img2.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal" data-target="#exampleModalLong2">
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Opis realizacji</h3>
-                      <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis similique, modi alias quos laudantium.</p>                       
-                    </div>
-                    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="close-icon-wrapper">
-                                <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
-                              </div>
-                              <img src="img/img2.jpg" class="card-img-modal">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <div class="hidden">
-                        <img src="img/img3.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal" data-target="#exampleModalLong3">
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Opis realizacji</h3>
-                      <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis similique, modi alias quos laudantium.</p>
-                    </div>
-                     <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="close-icon-wrapper">
-                                <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
-                              </div>
-                              <img src="img/img3.jpg" class="card-img-modal">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <div class="hidden">
-                        <img src="img/img4.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal" data-target="#exampleModalLong4">
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Opis realizacji</h3>
-                      <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis similique, modi alias quos laudantium.</p>
-                    </div>
-                     <div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="close-icon-wrapper">
-                                <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
-                              </div>
-                              <img src="img/img4.jpg" class="card-img-modal">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <div class="hidden">
-                        <img src="img/img5.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal" data-target="#exampleModalLong5">
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Opis realizacji</h3>
-                      <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis similique, modi alias quos laudantium.</p>
-                    </div>
-                    <div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="close-icon-wrapper">
-                                <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
-                              </div>
-                              <img src="img/img5.jpg" class="card-img-modal">
-                            </div>
-                          </div>
-                        </div>
-                    </div> 
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <div class="hidden">
-                        <img src="img/img6.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal" data-target="#exampleModalLong6">
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Opis realizacji</h3>
-                      <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis similique, modi alias quos laudantium.</p>
-                    </div>
-                     <div class="modal fade" id="exampleModalLong6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="close-icon-wrapper">
-                                <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
-                              </div>
-                              <img src="img/img6.jpg" class="card-img-modal">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <div class="hidden">
-                        <img src="img/img7.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal" data-target="#exampleModalLong7">
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Opis realizacji</h3>
-                      <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis similique, modi alias quos laudantium.</p>
-                    </div>
-                     <div class="modal fade" id="exampleModalLong7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="close-icon-wrapper">
-                                <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
-                              </div>
-                              <img src="img/img7.jpg" class="card-img-modal">
-                            </div>
-                          </div>
-                        </div>
-                    </div> 
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <div class="hidden">
-                        <img src="img/img8.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal" data-target="#exampleModalLong8">
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Opis realizacji</h3>
-                      <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis similique, modi alias quos laudantium.</p>
-                    </div>
-                     <div class="modal fade" id="exampleModalLong8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="close-icon-wrapper">
-                                <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
-                              </div>
-                              <img src="img/img8.jpg" class="card-img-modal">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <div class="hidden">
-                        <img src="img/img9.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal" data-target="#exampleModalLong9">
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Opis realizacji</h3>
-                      <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis similique, modi alias quos laudantium.</p>
-                    </div>
-                     <div class="modal fade" id="exampleModalLong9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="close-icon-wrapper">
-                                <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
-                              </div>
-                              <img src="img/img9.jpg" class="card-img-modal">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-          </div>
-        </section>
-        <footer id="footer" class="py-4">
-          <div class="container">
-            <h1 class="text-center m-0 py-5">skontaktuj się z nami</h1>
-            <div class="contact row p-4">
-                <div class="col-12 col-sm-6">
-                    <a href="https://www.facebook.com/wernerprojekt/"><i class="fab fa-facebook-square pr-2"></i>@wernerprojekt</a>
-                </div>
-                <div class="col-12 col-sm-6  py-2 text-right">
-                    <a class="ml-auto" href="tel:+48792357473"><i class="fas fa-phone-square-alt pr-2"></i>792 357 473</a>
-                </div>
+              </div>
             </div>
           </div>
-        </footer>
-    <script>
-		const footer = document.getElementById("footer");
-		const showFooter = () => {
-			footer.scrollIntoView({ behavior: 'smooth' });
-		}
-	</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        </div>
+        <div class="col mb-4">
+          <div class="card border-0">
+            <div class="hidden">
+              <img src="img/img2.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal"
+                data-target="#exampleModalLong2">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Opis realizacji</h3>
+              <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quis similique, modi alias quos laudantium.</p>
+            </div>
+            <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="close-icon-wrapper">
+                      <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <img src="img/img2.jpg" class="card-img-modal">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card border-0">
+            <div class="hidden">
+              <img src="img/img3.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal"
+                data-target="#exampleModalLong3">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Opis realizacji</h3>
+              <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quis similique, modi alias quos laudantium.</p>
+            </div>
+            <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="close-icon-wrapper">
+                      <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <img src="img/img3.jpg" class="card-img-modal">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card border-0">
+            <div class="hidden">
+              <img src="img/img4.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal"
+                data-target="#exampleModalLong4">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Opis realizacji</h3>
+              <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quis similique, modi alias quos laudantium.</p>
+            </div>
+            <div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="close-icon-wrapper">
+                      <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <img src="img/img4.jpg" class="card-img-modal">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card border-0">
+            <div class="hidden">
+              <img src="img/img5.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal"
+                data-target="#exampleModalLong5">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Opis realizacji</h3>
+              <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quis similique, modi alias quos laudantium.</p>
+            </div>
+            <div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="close-icon-wrapper">
+                      <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <img src="img/img5.jpg" class="card-img-modal">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card border-0">
+            <div class="hidden">
+              <img src="img/img6.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal"
+                data-target="#exampleModalLong6">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Opis realizacji</h3>
+              <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quis similique, modi alias quos laudantium.</p>
+            </div>
+            <div class="modal fade" id="exampleModalLong6" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="close-icon-wrapper">
+                      <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <img src="img/img6.jpg" class="card-img-modal">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card border-0">
+            <div class="hidden">
+              <img src="img/img7.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal"
+                data-target="#exampleModalLong7">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Opis realizacji</h3>
+              <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quis similique, modi alias quos laudantium.</p>
+            </div>
+            <div class="modal fade" id="exampleModalLong7" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="close-icon-wrapper">
+                      <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <img src="img/img7.jpg" class="card-img-modal">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card border-0">
+            <div class="hidden">
+              <img src="img/img8.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal"
+                data-target="#exampleModalLong8">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Opis realizacji</h3>
+              <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quis similique, modi alias quos laudantium.</p>
+            </div>
+            <div class="modal fade" id="exampleModalLong8" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="close-icon-wrapper">
+                      <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <img src="img/img8.jpg" class="card-img-modal">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card border-0">
+            <div class="hidden">
+              <img src="img/img9.jpg" class="card-img-top" alt="Nasze realizacje" data-toggle="modal"
+                data-target="#exampleModalLong9">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Opis realizacji</h3>
+              <p class="card-text realization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quis similique, modi alias quos laudantium.</p>
+            </div>
+            <div class="modal fade" id="exampleModalLong9" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="close-icon-wrapper">
+                      <i class="fas fa-times" data-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <img src="img/img9.jpg" class="card-img-modal">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <footer id="footer" class="py-4">
+    <div class="container">
+      <h1 class="text-center m-0 py-5">skontaktuj się z nami</h1>
+      <div class="contact row p-4">
+        <div class="col-12 col-sm-6">
+          <a href="https://www.facebook.com/wernerprojekt/"><i
+              class="fab fa-facebook-square pr-2"></i>@wernerprojekt</a>
+        </div>
+        <div class="col-12 col-sm-6  py-2 text-right">
+          <a class="ml-auto" href="tel:+48792357473"><i class="fas fa-phone-square-alt pr-2"></i>792 357 473</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const footer = document.getElementById("footer");
+    const showFooter = () => {
+      footer.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
